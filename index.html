@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid w-50 "
+                    src="data:image/png;base64,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"
+                    alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Car Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Travel Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- --carousel-- -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/008/009/837/small/outdoor-tourism-landscape-luxurious-beach-resort-with-swimming-pool-and-beach-chairs-or-loungers-umbrellas-with-palm-trees-and-blue-sky-sea-horizon-summer-island-relax-travel-and-idyllic-vacation-photo.jpg"  height="700px"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/029/346/824/small/ai-generated-ai-generative-backpacker-alone-man-at-high-peak-mountain-adventure-outdoor-nature-inspiration-background-graphic-art-photo.jpg " height="700px"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/027/220/206/small/luxury-swimming-pool-with-fantastic-sea-view-and-horizon-under-palm-trees-exotic-beach-summer-vacation-and-holiday-resort-or-hotel-concept-family-couple-vacation-beach-panorama-tourism-background-photo.jpg"  height="700px
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- footer-- -->
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-4 ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuxrvcNMfGLh73uKP1QqYpKoCB0JLXiBMvA&s"
+                    alt=""> <br>
+                <h3 class="mt-3">Kyle Jhon</h3>
+            </div>
+            <div class="col-4"> </div>
+            <div class="col-4">
+                <h2>Visit us</h2>
+                <h3> <i class="fa-solid fa-envelope fs-5"></i>   <a class="fs-5" href="">traveler@gmail.com</a></h3>
+                <i class="fa-brands fa-facebook fs-6"></i>
+                <i class="fa-brands fa-instagram fs-6"></i>
+                <i class="fa-brands fa-youtube fs-6"></i>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
